@@ -34,7 +34,7 @@ pip install rich
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/sqlite-bookstore.git
+git clone https://github.com/maninderjeet-singh/sqlite-bookstore.git
 cd sqlite-bookstore
 ```
 
