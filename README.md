@@ -12,7 +12,7 @@ You can add authors, insert books for each author, and fetch lists of authors an
 - [x] View list of authors  
 - [x] View all books  
 - [ ] View books by a specific author  
-- [] Insert books linked to specific authors  
+- [ ] Insert books linked to specific authors  
 - [ ] Improve error handling and input validation  
 - [ ] Add unit tests  
 
