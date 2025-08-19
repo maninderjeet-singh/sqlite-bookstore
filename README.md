@@ -9,10 +9,10 @@ You can add authors, insert books for each author, and fetch lists of authors an
 
 ## 🚀 Features (Planned & Implemented)
 - [x] Add new authors with name, email, and phone  
-- [x] Insert books linked to specific authors  
-- [ ] View list of authors  
-- [ ] View all books  
+- [x] View list of authors  
+- [x] View all books  
 - [ ] View books by a specific author  
+- [] Insert books linked to specific authors  
 - [ ] Improve error handling and input validation  
 - [ ] Add unit tests  
 
