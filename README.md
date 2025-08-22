@@ -1,85 +1,101 @@
-# 📚 SQLite Bookstore
-
-🚧 **Development in Progress** 🚧  
-
-A simple Python CLI tool to manage **authors** and their **books** using **SQLite**.  
-You can add authors, insert books for each author, and fetch lists of authors and books easily.  
+Here’s a **README.md** draft tailored for your project **sqlite-bookstore** 👇
 
 ---
 
-## 🚀 Features (Planned & Implemented)
-- [x] Add new authors with name, email, and phone  
-- [x] View list of authors  
-- [x] View all books  
-- [ ] View books by a specific author  
-- [ ] Insert books linked to specific authors  
-- [ ] Improve error handling and input validation  
-- [ ] Add unit tests  
+# 📚 sqlite-bookstore
+
+A simple **command-line bookstore management system** built with **Python** and **SQLite**.
+You can add authors, manage their books, and perform CRUD operations via a text-based menu.
+
+⚠️ **Note:** This project is currently under active development. Features and structure may change.
 
 ---
 
-## 📦 Requirements
-- Python 3.8+  
-- [rich](https://pypi.org/project/rich/) (for styled console output)  
+## 🚀 Features
 
-Install dependencies:
-```bash
-pip install rich
-````
+* Manage **Authors**
+
+  * Add, update, view, and delete authors
+  * Unique email & phone validation
+
+* Manage **Books**
+
+  * Add, update, view, and delete books
+  * Link books to specific authors
+  * Store price & publish date
+
+* SQLite Database (auto-created)
+
+* Input validation & interactive CLI
+
+* Rich output formatting using [rich](https://github.com/Textualize/rich)
+
 
 ---
 
-## ⚡ Usage
+## ⚙️ Installation
 
-1. Clone the repository:
+1. Clone this repo:
 
-```bash
-git clone https://github.com/maninderjeet-singh/sqlite-bookstore.git
-cd sqlite-bookstore
-```
+   ```bash
+   git clone https://github.com/<your-username>/sqlite-bookstore.git
+   cd sqlite-bookstore
+   ```
 
-2. Run the script:
+2. Create virtual environment (optional but recommended):
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # On Linux/Mac
+   venv\Scripts\activate      # On Windows
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install rich
+   ```
+
+---
+
+## ▶️ Usage
+
+Run the app:
 
 ```bash
 python main.py
 ```
 
----
+You’ll see a menu like this:
 
-## 🛠 Database Schema
-
-**authors**
-
-* id (PK)
-* name
-* email
-* phone
-* created\_at
-
-**books**
-
-* id (PK)
-* title
-* author\_id (FK → authors.id)
-* created\_at
+```
+1. Add Author
+2. List Authors
+3. Update Author
+4. Delete Author
+5. Add Book
+6. List Books
+7. Update Book
+8. Delete Book
+9. Exit
+```
 
 ---
 
-## 📝 Notes
+## 🛠️ Tech Stack
 
-This project is still under development. Features will be added gradually.
-Feel free to suggest ideas or improvements via Issues or Pull Requests.
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+* **Python 3.10+**
+* **SQLite3** (lightweight database)
+* **Rich** (for colored CLI output)
 
 ---
 
-## 📄 License
+## 📌 Roadmap
 
-This project is licensed under the MIT License.
+* [ ] Better input validation (price, dates)
+* [ ] Pagination for long lists
+* [ ] Export data to CSV/JSON
+* [ ] Modularize into packages (`author`, `book`, `db`)
+* [ ] Unit tests
 
-
+---
